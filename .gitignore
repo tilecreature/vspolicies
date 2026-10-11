@@ -1,0 +1,10 @@
+node_modules/
+.preview/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+*.jks
+*.keystore
+key.properties
