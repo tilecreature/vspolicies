@@ -8,3 +8,5 @@ Thumbs.db
 *.jks
 *.keystore
 key.properties
+
+/MAINTENANCE.local.md
