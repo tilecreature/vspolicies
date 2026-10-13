@@ -1,14 +1,14 @@
 {
-  "developer": "Vasser Studios",
-  "contactEmail": "vasserstudios@hotmail.com",
-  "updated": "2026-10-12",
-  "basePath": "/vspolicies",
-  "apps": [
-    {
-      "name": "Calorie to Kilojoules",
-      "slug": "calorie-to-kilojoules",
-      "description": "An offline converter for food calories (kcal) and kilojoules (kJ).",
-      "packageName": "au.com.vasserstudios.www.calorietokilojoules"
-    }
-  ]
+    "developer":  "Vasser Studios",
+    "contactEmail":  "vasserstudios@hotmail.com",
+    "updated":  "2026-10-13",
+    "basePath":  "/vspolicies",
+    "apps":  [
+                 {
+                     "name":  "Calorie to Kilojoules",
+                     "slug":  "calorie-to-kilojoules",
+                     "description":  "An offline converter for food calories (kcal) and kilojoules (kJ).",
+                     "packageName":  "au.com.vasserstudios.www.calorietokilojoules"
+                 }
+             ]
 }
