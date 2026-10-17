@@ -5,6 +5,7 @@ Privacy policies for apps developed by Vasser Studios.
 ## Policies
 
 - [Calorie to Kilojoules](https://tilecreature.github.io/vspolicies/calorie-to-kilojoules/)
+- [Slope](https://tilecreature.github.io/vspolicies/slope/)
 
 [Visit the privacy policy website](https://tilecreature.github.io/vspolicies/).
 

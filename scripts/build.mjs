@@ -14,7 +14,7 @@ const escape = (text) => String(text).replace(/[&<>"']/g, char => ({ '&': '&amp;
 const base = config.basePath;
 const developer = escape(config.developer);
 const contactLink = `<a href="mailto:${escape(email)}">${escape(email)}</a>`;
-const date = new Intl.DateTimeFormat('en-AU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${config.updated}T00:00:00Z`));
+const formatDate = (updated) => new Intl.DateTimeFormat('en-AU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${updated}T00:00:00Z`));
 const layout = (title, content, description) => `<!doctype html>
 <html lang="en-AU">
 <head>
@@ -40,13 +40,16 @@ const pages = [];
 for (const app of config.apps) {
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(app.slug) || slugs.has(app.slug)) throw new Error('Invalid or duplicate app slug.');
   slugs.add(app.slug);
+  const updated = app.updated ?? config.updated;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(updated)) throw new Error(`Invalid updated date for ${app.slug}.`);
+  const date = formatDate(updated);
   const source = await readFile(path.join(root, 'content', `${app.slug}.html`), 'utf8');
   const policy = source.replaceAll('{{contactLink}}', contactLink);
   if (/\{\{.*?\}\}/.test(policy)) throw new Error(`Unresolved placeholder in ${app.slug}.`);
   const content = `<a class="back-link" href="${base}/">← All privacy policies</a>
     <p class="eyebrow">Privacy policy</p><h1>${escape(app.name)}</h1><p class="intro">${escape(app.description)}</p>
     <div class="policy-layout"><article class="policy" aria-label="Privacy policy">${policy}</article>
-    <aside class="details" aria-label="Policy details"><p><strong>Developer</strong>${developer}</p><p><strong>Updated</strong><time datetime="${config.updated}">${date}</time></p><p><strong>Android package</strong>${escape(app.packageName)}</p></aside></div>`;
+    <aside class="details" aria-label="Policy details"><p><strong>Developer</strong>${developer}</p><p><strong>Updated</strong><time datetime="${updated}">${date}</time></p><p><strong>Android package</strong>${escape(app.packageName)}</p></aside></div>`;
   pages.push([`${app.slug}/index.html`, layout(`${app.name} — Privacy policy`, content, `Privacy policy for ${app.name}, developed by ${config.developer}.`)]);
 }
 if (!pages.length) throw new Error('At least one app policy is required.');
