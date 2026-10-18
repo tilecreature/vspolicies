@@ -30,6 +30,13 @@
       "description": "An offline dog-to-human age calculator with breed and adult-size estimates.",
       "packageName": "com.dogage.app",
       "updated": "2026-10-18"
+    },
+    {
+      "name": "Tyre Lab",
+      "slug": "tyre-lab",
+      "description": "Offline tyre size comparisons, speedometer estimates, pressure conversion and manual pressure records.",
+      "packageName": "com.tyrelab.app",
+      "updated": "2026-10-19"
     }
   ]
 }
