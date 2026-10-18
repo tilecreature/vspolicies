@@ -7,6 +7,8 @@ Privacy policies for apps developed by Vasser Studios.
 - [Calorie to Kilojoules](https://tilecreature.github.io/vspolicies/calorie-to-kilojoules/)
 - [Slope](https://tilecreature.github.io/vspolicies/slope/)
 
+- [Sleep Sounds: Deep Rest](https://tilecreature.github.io/vspolicies/sleep-sounds-deep-rest/)
+
 [Visit the privacy policy website](https://tilecreature.github.io/vspolicies/).
 
 For support or privacy enquiries, email [vasserstudios@hotmail.com](mailto:vasserstudios@hotmail.com).

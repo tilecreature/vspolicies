@@ -16,6 +16,13 @@
       "description": "An offline slope meter, inclinometer, surface level, compass and gradient calculator.",
       "packageName": "com.slopemeter.app",
       "updated": "2026-10-17"
+    },
+    {
+      "name": "Sleep Sounds: Deep Rest",
+      "slug": "sleep-sounds-deep-rest",
+      "description": "Offline rain, thunder and nature soundscapes with mixing and a sleep timer.",
+      "packageName": "com.sleepsoundsrest.app",
+      "updated": "2026-10-18"
     }
   ]
 }
