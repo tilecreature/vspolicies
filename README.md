@@ -9,6 +9,8 @@ Privacy policies for apps developed by Vasser Studios.
 
 - [Sleep Sounds: Deep Rest](https://tilecreature.github.io/vspolicies/sleep-sounds-deep-rest/)
 
+- [Dog Age Calculator](https://tilecreature.github.io/vspolicies/dog-age-calculator/)
+
 [Visit the privacy policy website](https://tilecreature.github.io/vspolicies/).
 
 For support or privacy enquiries, email [vasserstudios@hotmail.com](mailto:vasserstudios@hotmail.com).

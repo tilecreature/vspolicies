@@ -23,6 +23,13 @@
       "description": "Offline rain, thunder and nature soundscapes with mixing and a sleep timer.",
       "packageName": "com.sleepsoundsrest.app",
       "updated": "2026-10-18"
+    },
+    {
+      "name": "Dog Age Calculator",
+      "slug": "dog-age-calculator",
+      "description": "An offline dog-to-human age calculator with breed and adult-size estimates.",
+      "packageName": "com.dogage.app",
+      "updated": "2026-10-18"
     }
   ]
 }
